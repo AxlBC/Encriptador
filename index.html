@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <!--Definimos el diccionario-->
+        <meta charset="UTF-8">
+
+        <!--Hacems nuestra página responsiva-->
+        <meta name="viewport" content="width=device-width">
+
+        <!--Título de la pestaña-->
+        <title>Ryan Benítez | Encriptador</title>
+
+        <!--Imagen en la pestaña-->
+        <link rel="icon" href="images/unnamed.png" type="image/x-icon">
+
+        <!--Conexión con los archivos de reset y el css-->
+        <!--link rel="stylesheet" href="reset.css"-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="music();">
+        <header>
+            <div class="encabezado">
+                <h1><img src="images/Alura.png" class="logo" alt="Logo de Alura"></h1>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="titulo">Encriptador</h1>
+            <!--Contiene todos los elementos de la pagina web-->
+            <div class="contenedor">
+                <!--textarea para texto a encriptar/desencriptar (1)-->
+                <div class="cajaEncriptador">
+                    <textarea rows="20" id="texto" class="txtArea" placeholder="Ingrese su texto aquí" autofocus></textarea>
+                </div>
+
+                <!--textarea para el texto resultante (2)-->
+                <div class="cajaResultado">
+                    <textarea rows="20" id="resultado" class="txtArea" placeholder="Resultado" readonly></textarea>
+                </div>
+
+                <!--Indicacion (3)-->
+                <label class="indicacion"><img class="imagen-exclamacion" src="images/bi_exclamation-circle-fill.png" alt="Indicacion sobre el tipo de caracteres aceptados"> Solo letras minúsculas y sin tilde</label>
+
+                <!--div que contiene los div con los botones (4)-->
+                <div class="subcontenedor-botones">
+                        <!--Div para los botones encriptar y desencriptar-->
+                    <div class="function-buttons">
+                        <!--Se crean los botones y se conectan con las funciones de HTML-->
+                        <button onclick="encriptarTexto();" class="btnProgram">Encriptar</button>
+                        <button onclick="desencriptarTexto();" class="btnProgram">Desencriptar</button>
+                    </div>
+                    <!--Div para el boton copiar-->
+                    <div class="copy-button">
+                        <button onclick="copiar();" class="btnProgram" id="btnCopiar">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="piePagina">
+                <p>© Ryan Benítez - 2024</p>
+            </div>
+            <div class="piePagina">
+                <a href="https://github.com/AxlBC?tab=repositories" target="_blank"><img src="images/GitHub-Symbol.png" class="logos" alt="GitHub Logo"></a>
+                <a href="https://www.linkedin.com/in/ryan-benitez-sv/" target="_blank"><img src="images/linkedin-black-logo.png" class="logos" alt="LinkedIn logo"></a>
+            </div>
+        </footer>
+
+        <!--Hacemos la conexión con el archivo .js-->
+        <script src="script.js"></script>
+        <audio id="music" loop>
+            <source src="resources/utomp3.com - Kiras Theme Elevator Music_320kbps-[AudioTrimmer.com].mp3" type="audio/mpeg">Tu navegador no admite la reproducción de este audio
+        </audio>
+    </body>
+</html>

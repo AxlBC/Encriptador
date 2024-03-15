@@ -1,0 +1,273 @@
+/*
+    propiedades del body de la página
+*/
+body{
+    background-color: #CCCCCC;
+}
+
+/*
+    encabezado de la página
+*/
+header{
+    width: 100%;
+    height: 5em;
+    padding: 15px 0 15px;
+    background: #CCCCCC;
+    margin: 0;
+}
+
+/*
+    Logo de Alura
+*/
+.logo {
+    position: relative;
+    left: 5%;
+    height: 4em;
+    margin: 20px;
+    opacity: 50%;
+    border-width: 4px;
+}
+
+h1{
+    display: inline-block;
+}
+
+.titulo {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+/*
+    <main>
+*/
+main {
+    background: #CCCCCC;
+}
+
+/*
+    el cuerpo de la pagina
+*/
+.contenedor{
+    margin: 0px auto;
+    width: 940px;
+    border: none;
+    padding: 20px 20px;
+    /*margin: 35px auto;*/
+}
+
+/*
+    <div> del textarea del encriptador
+*/
+.cajaEncriptador{
+    width: 62%;
+    display: inline-block;
+    margin: 0;
+}
+
+/*
+    Textareas en general
+*/
+.txtArea{
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 10px;
+    /*border: none;*/
+    padding: 5px;
+    font-size: 22px;
+    background-color: #CCCCCC;
+}
+
+.txtArea:focus{
+    outline: none;
+}
+
+#resultado {
+    background-image: url(images/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*
+    <div> que contiene el textarea del resultado
+*/
+.cajaResultado{
+    width: 36.5%;
+    display: inline-block;
+}
+
+/*
+    imagen exclamacion al lado del label
+*/
+.imagen-exclamacion {
+    /**/
+}
+
+/*
+    indicacion
+*/
+.indicacion{
+    position: relative;
+    padding: 5px 10px 10px;
+    display: block;
+}
+
+/*
+    el contenedor de los div de los botones
+*/
+.subcontenedor-botones {
+    width: 100%;
+    padding: 15px 0 15px;
+}
+
+/*
+    contiene los botones de encriptar y desencriptar
+*/
+.function-buttons {
+    width: 62%;
+    display: inline-block;
+}
+
+/*
+    contiene el boton de copiar
+*/
+.copy-button {
+    display: inline-block;
+    width: 36.5%;
+}
+/*
+    el estilo asignado a los botones
+*/
+.btnProgram {
+    border-radius: 8px;
+    background-color: #0e5fd8;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    width: 49.5%;
+    transition: 1s all;
+}
+
+/*
+    evento asignado al estilo de los botones
+*/
+.btnProgram:hover {
+    background: #3e7fe0;
+}
+
+/*
+    propiedad especifica para el boton copiar
+*/
+#btnCopiar {
+    width: 100%;
+}
+
+/*
+    pie de pagina
+*/
+footer{
+    background-color: #CCCCCC;
+}
+
+.piePagina{
+    padding: 10px;
+    border-width: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/*
+    logos pie de página
+*/
+.logos {
+    height: 2em;
+    margin: 0 10px 0 0;
+}
+
+.logos:hover{
+    transform: scale(1.05);
+    filter: brightness(150%)
+}
+
+@media screen and (max-width:480px){
+    .header, .encabezado, .contenedor, .piePagina{
+        width: auto;
+    }
+
+    header{
+        height: 20px;
+    }
+
+    .encabezado {
+        text-align: left;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .titulo {
+        /**/
+    }
+
+    .contenedor {
+        padding: 10px
+    }
+
+    .cajaResultado, .cajaEncriptador{
+        width: 100%;
+    }
+
+    .indicacion{
+        padding: 5px;
+    }
+
+    .subcontenedor-botones {
+        width: 100%;
+        padding: 5px 0 5px;
+    }
+
+    .function-buttons {
+        width: 66%;
+    }
+
+    .btnProgram{
+        width: 49%;
+    }
+
+    .copy-button {
+        width: 32.5%;
+    }
+
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cajaEncriptador{
+        order: 1;
+    }
+    .indicacion{
+        order:2
+    }
+    .subcontenedor-botones{
+        order: 3;
+    }
+    .cajaResultado{
+        order: 4;
+    }
+}
+
+
+
