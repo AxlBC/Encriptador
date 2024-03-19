@@ -102,9 +102,11 @@ main {
 /*
     imagen exclamacion al lado del label
 */
+/*
 .imagen-exclamacion {
-    /**/
+
 }
+*/
 
 /*
     indicacion
@@ -218,9 +220,11 @@ p {
         height: 3em;
     }
 
+    /*
     .titulo {
-        /**/
+ 
     }
+    */
 
     .contenedor {
         padding: 10px
