@@ -66,7 +66,6 @@ function copiar() {
         navigator.clipboard.writeText(resultado.value);
     } else {
         resultado.placeholder = "No hay ningun resultado para copiar."
-        color(true);
         sound();
     }
     limpiar();
