@@ -22,14 +22,13 @@ function encriptarTexto() {
             }
             resultado += aux;
         }
-        console.log(resultado);
         document.getElementById('resultado').value = resultado;
         
-        //Se elimina la imagen del backgroun para dar lugar al texto encriptado
+        //Se elimina la imagen del background para dar lugar al texto encriptado
         document.getElementById('resultado').style.backgroundImage = "none";
     }
     else {
-        document.getElementById('texto').placeholder = "No ha ingresado ningun texto";
+        document.getElementById('texto').placeholder = "No ha ingresado ningun texto para encriptar";
         sound();
     }
 }
@@ -61,8 +60,15 @@ function desencriptarTexto(){
 
 //Funcion encargada de copiar el texto resultante al portapapeles
 function copiar() {
-    let aux = document.getElementById('resultado').value;
-    navigator.clipboard.writeText(aux);
+    const resultado = document.getElementById('resultado');
+
+    if (resultado.value != "") {
+        navigator.clipboard.writeText(resultado.value);
+    } else {
+        resultado.placeholder = "No hay ningun resultado para copiar."
+        color(true);
+        sound();
+    }
     limpiar();
 }
 
@@ -75,7 +81,7 @@ function limpiar() {
 }
 
 
-//Reproducir sonido
+//Reproducir sonido de error
 function sound() {
     var sonido = new Audio('resources/335586__littlerainyseasons__warning.mp3');
     sonido.play();
