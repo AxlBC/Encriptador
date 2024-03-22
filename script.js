@@ -1,7 +1,6 @@
 //Variables
 let texto = '';
 let resultado = '';
-let index = 0;
 let encriptaciones = ["ai", "enter", "imes", "ober", "ufat"]
 let vocalesEncriptar = ["a", "e", "i", "o", "u"]
 
@@ -90,4 +89,4 @@ function sound() {
 //Reproducir musica
 function music() {
     document.getElementById('music').play();
-}
+ }
