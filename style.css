@@ -230,7 +230,7 @@ p {
     */
 
     .contenedor {
-        height: 125vh;
+        height: 125%;
         padding: 10px
     }
 
