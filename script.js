@@ -27,7 +27,7 @@ function encriptarTexto() {
         document.getElementById('resultado').style.backgroundImage = "none";
     }
     else {
-        document.getElementById('texto').placeholder = "No ha ingresado ningun texto para encriptar";
+        document.getElementById('texto').placeholder = "No ha ingresado ningún texto para encriptar";
         sound();
     }
 }
@@ -64,7 +64,7 @@ function copiar() {
     if (resultado.value != "") {
         navigator.clipboard.writeText(resultado.value);
     } else {
-        resultado.placeholder = "No hay ningun resultado para copiar."
+        resultado.placeholder = "No hay ningún resultado para copiar."
         sound();
     }
     limpiar();

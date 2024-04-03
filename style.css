@@ -8,10 +8,11 @@ body{
 /*
     encabezado de la página
 */
-header{
+.encabezado {
+    position: relative;
     width: 100%;
-    height: 6em;
-    padding: 15px 0;
+    height: 10vh;
+    /*padding: 15px 0;*/
     background: #CCCCCC;
     margin: 0;
 }
@@ -20,12 +21,11 @@ header{
     Logo de Alura
 */
 .logo {
-    position: relative;
-    left: 5%;
-    height: 4em;
-    margin: 20px;
-    opacity: 50%;
-    border-width: 4px;
+    position: absolute;
+    left: 2%;
+    height: 8vh;
+    margin-top: 1vh;
+    opacity: 60%;
 }
 
 h1{
@@ -52,10 +52,10 @@ main {
 */
 .contenedor{
     margin: 0px auto;
-    width: 940px;
+    height: 70vh;
+    width: 65%;
     border: none;
-    padding: 20px 20px;
-    /*margin: 35px auto;*/
+    padding-top: 20px;
 }
 
 /*
@@ -112,11 +112,9 @@ main {
     indicacion
 */
 .indicacion{
-    position: relative;
     font-size: 1.25em;
-    padding: 5px 10px 10px;
+    padding: 1vh;
     display: block;
-    transition: 300ms;
 }
 
 /*
@@ -176,12 +174,15 @@ main {
 */
 footer{
     background-color: #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .piePagina{
-    padding: 10px;
+    padding: 0.5vh;
     border-width: 2px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -208,14 +209,16 @@ p {
         width: auto;
     }
 
+    /*
     header{
-        height: 2em;
-    }
+        height: 6em;
+    }*/
 
     .encabezado {
-        text-align: left;
+        text-align: center;
+        height: 3vh;
     }
-
+    
     .logo {
         height: 3em;
     }
@@ -227,6 +230,7 @@ p {
     */
 
     .contenedor {
+        height: 125vh;
         padding: 10px
     }
 
